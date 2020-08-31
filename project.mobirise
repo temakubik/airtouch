@@ -140,7 +140,7 @@
               "color": "#66458e"
             },
             ".mbr-text, .mbr-section-btn, .link-align": {
-              "color": "#1c2830"
+              "color": "#f16d7e"
             },
             ".mbr-section-title, .mbr-section-btn": {
               "color": "#5a3d30"
