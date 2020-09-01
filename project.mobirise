@@ -60,7 +60,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 38,
+    "uniqCompNum": 39,
     "versionPublish": "5.1.2",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false,
@@ -1113,7 +1113,7 @@
               "color": "#cccccc"
             },
             ".mbr-section-btn, .mbr-text": {
-              "color": "#66458e"
+              "color": "#5a3d30"
             }
           },
           "_name": "content02",
@@ -1177,7 +1177,7 @@
             }
           },
           "_name": "ampVideo4",
-          "_customHTML": "<section class=\"ampVideo4 video-with-lightbox\" group=\"Images & Videos\" plugins=\"amp-main, amp-lightbox, amp-youtube\">\n    <!--  -->\n    <mbr-parameters>\n        <header>Size:</header>\n        <input type=\"range\" inline title=\"Top:\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom:\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <!--  -->\n        <header>Headers:</header>\n        <input type=\"checkbox\" title=\"Title:\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle:\" name=\"showSubtitle\" checked>\n        <select title=\"Align:\" name=\"alignTitle\" condition=\"showTitle || showSubtitle\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <!--  -->\n        <header>Button play:</header>\n        <input type=\"color\" title=\"Color icon:\" name=\"colorIcon\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Color BG icon:\" name=\"colorIconBg\" value=\"#f16d7e\">\n        <input type=\"range\" inline title=\"Size:\" name=\"sizeBtnPlay\" min=\"1\" max=\"2\" value=\"2\" step=\"0.1\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"https://youtu.be/okbBKxoQc1I\">\n        <!--  -->\n        <header>Background:</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image:\" value=\"@PROJECT_PATH@/assets/images/2-3024x4032.jpg\" selected>\n            <input type=\"color\" title=\"Background Color:\" value=\"#9096a4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay:\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Colorv:\" name=\"overlayColor\" value=\"#5a3d30\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity:\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--  -->\n    <!-- Overlay -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <!-- Container -->\n    <div class=\"container\">\n        <div class=\"title mbr-white\" mbr-class=\"{'align-left': alignTitle == 1,'align-center':alignTitle == 2, 'align-right':alignTitle == 3}\" mbr-if=\"showTitle || showSubtitle\">\n            <!-- Icon play -->\n            <div class=\"wrapper-btn-play\">\n                <div class=\"popup-btn btn-play\" on=\"tap:my-lightbox\" role=\"button\" tabindex=\"0\">\n                    <span class=\"iconfont-wrapper\">\n                        <span mbr-icon class=\"amp-iconfont fa-play fa\"></span>\n                    </span>\n                    <div class=\"test-animation-1\"></div>\n                    <div class=\"test-animation-2\"></div>\n                </div>\n            </div>\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold mbr-pt-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Смотреть урок</h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-3 mbr-light\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Обзор техники «airtouch». Методики выполнения. Разбор схем. Отработка схемы без стыков, с контурингом у лица.</h3>\n        </div>\n        <!-- Lightbox -->\n        <amp-lightbox id=\"my-lightbox\" layout=\"nodisplay\">\n            <div class=\"lightbox\" on=\"tap:my-lightbox.close\" role=\"button\" tabindex=\"0\">\n                <div class=\"container\">\n                    <div class=\"video-block\">\n                        <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n                    </amp-youtube>\n                </div>\n            </div>\n        </div>\n    </amp-lightbox>\n</div>\n</section>",
+          "_customHTML": "<section class=\"ampVideo4 video-with-lightbox\" group=\"Images & Videos\" plugins=\"amp-main, amp-lightbox, amp-youtube\">\n    <!--  -->\n    <mbr-parameters>\n        <header>Size:</header>\n        <input type=\"range\" inline title=\"Top:\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom:\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <!--  -->\n        <header>Headers:</header>\n        <input type=\"checkbox\" title=\"Title:\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle:\" name=\"showSubtitle\" checked>\n        <select title=\"Align:\" name=\"alignTitle\" condition=\"showTitle || showSubtitle\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <!--  -->\n        <header>Button play:</header>\n        <input type=\"color\" title=\"Color icon:\" name=\"colorIcon\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Color BG icon:\" name=\"colorIconBg\" value=\"#f16d7e\">\n        <input type=\"range\" inline title=\"Size:\" name=\"sizeBtnPlay\" min=\"1\" max=\"2\" value=\"2\" step=\"0.1\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"https://www.youtube.com/watch?v=okbBKxoQc1I\">\n        <!--  -->\n        <header>Background:</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image:\" value=\"@PROJECT_PATH@/assets/images/2-3024x4032.jpg\" selected>\n            <input type=\"color\" title=\"Background Color:\" value=\"#9096a4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay:\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Colorv:\" name=\"overlayColor\" value=\"#5a3d30\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity:\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--  -->\n    <!-- Overlay -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <!-- Container -->\n    <div class=\"container\">\n        <div class=\"title mbr-white\" mbr-class=\"{'align-left': alignTitle == 1,'align-center':alignTitle == 2, 'align-right':alignTitle == 3}\" mbr-if=\"showTitle || showSubtitle\">\n            <!-- Icon play -->\n            <div class=\"wrapper-btn-play\">\n                <div class=\"popup-btn btn-play\" on=\"tap:my-lightbox\" role=\"button\" tabindex=\"0\">\n                    <span class=\"iconfont-wrapper\">\n                        <span mbr-icon class=\"amp-iconfont fa-play fa\"></span>\n                    </span>\n                    <div class=\"test-animation-1\"></div>\n                    <div class=\"test-animation-2\"></div>\n                </div>\n            </div>\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold mbr-pt-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Смотреть урок</h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-3 mbr-light\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Обзор техники «airtouch». Методики выполнения. Разбор схем. Отработка схемы без стыков, с контурингом у лица.</h3>\n        </div>\n        <!-- Lightbox -->\n        <amp-lightbox id=\"my-lightbox\" layout=\"nodisplay\">\n            <div class=\"lightbox\" on=\"tap:my-lightbox.close\" role=\"button\" tabindex=\"0\">\n                <div class=\"container\">\n                    <div class=\"video-block\">\n                        <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n                    </amp-youtube>\n                </div>\n            </div>\n        </div>\n    </amp-lightbox>\n</div>\n</section>",
           "_cid": "s9nqRyrDnp",
           "_protectedParams": [],
           "_global": false,
@@ -1208,7 +1208,7 @@
               "color": "#cccccc"
             },
             ".mbr-section-btn, .mbr-text": {
-              "color": "#66458e"
+              "color": "#5a3d30"
             }
           },
           "_name": "content02",
@@ -1279,6 +1279,45 @@
           "_once": false,
           "_params": {},
           "_anchor": "ampVideo4-11"
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".title-line:after": {
+              "background-color": "@primaryColor"
+            },
+            ".title": {
+              "position": "relative"
+            },
+            ".custom-subtitle-bg": {
+              "top": "~\"calc(50% - 5px)\"",
+              "width": "100%",
+              "font-style": "normal",
+              "position": "absolute",
+              "color": "lighten(contrast(@bgColor), 25%)",
+              "text-transform": "uppercase",
+              "opacity": "0.05",
+              "transform": "translateY(-50%)"
+            },
+            ".mbr-subtitle": {
+              "color": "#5a3d30"
+            }
+          },
+          "_name": "ampContent5",
+          "_customHTML": "<section class=\"ampContent5\" group=\"Content\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <header>Size</header>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n    <input type=\"range\" inline title=\"Count Column\" name=\"countColumn\" min=\"1\" max=\"3\" step=\"1\" value=\"1\">\n    <header>Title</header>\n    <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n    <header>Align</header>\n    <select title=\"Title\" name=\"titleAlign\" condition=\"showTitle || showSubtitle\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <select title=\"Text Align\" name=\"textAlign\">\n        <option value=\"1\">Left</option>\n        <option value=\"2\" selected>Center</option>\n        <option value=\"3\">Right</option>\n    </select>\n    <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#fffef2\" required>\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <div class=\"container\">\n        <div class=\"title\" mbr-class=\"{'align-center':titleAlign==2,\n                         'align-right':titleAlign==3}\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style mbr-bold section-title title-line mbr-pb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Сертификат</h3>\n            <h4 class=\"mbr-subtitle mbr-fonts-style custom-subtitle-bg mbr-bold\" mbr-theme-style=\"display-1\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-subtitle\">Сертификат</h4>\n        </div>\n        <div class=\"mbr-row mbr-pt-4\">\n            <div class=\"mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6 mbr-col-lg-6': countColumn == 2, 'mbr-col-md-4 mbr-col-lg-4': countColumn == 3, 'mbr-col-md-12 mbr-col-lg-12': countColumn == 1}\">\n                <p class=\"mbr-text mbr-pb-4 mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\" mbr-class=\"{'align-center': textAlign == 2,\n                               'align-right': textAlign == 3}\">Для получения сертификата необходимо написать свое имя и фамилию на электронную почту: <b>aleksis1995@bk.ru</b></p>\n            </div>\n            <div class=\"mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-6 mbr-col-lg-6': countColumn == 2, 'mbr-col-md-4 mbr-col-lg-4': countColumn == 3}\" mbr-if=\"countColumn > 1\">\n                <p class=\"mbr-text mbr-pb-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-class=\"{'align-center': textAlign == 2,\n                               'align-right': textAlign == 3}\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur magni delectus, deleniti explicabo maiores nesciunt velit a sed, nobis porro dolor illo adipisci aliquid accusamus. Possimus, unde! Officiis cum est laudantium blanditiis corporis. Adipisci fuga quas ducimus qui enim, accusantium?</p>\n            </div>\n            <div class=\"mbr-col-sm-12\" mbr-class=\"{'mbr-col-md-4 mbr-col-lg-4': countColumn == 3}\" mbr-if=\"countColumn > 2\">\n                <p class=\"mbr-text mbr-pb-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-class=\"{'align-center': textAlign == 2,\n                               'align-right': textAlign == 3}\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate nemo quae hic delectus rem eaque inventore doloribus repudiandae laboriosam rerum mollitia alias commodi, ducimus porro vero voluptatem, aliquid quam quos eos dolore ipsum sed. Dolorem totam, molestias laboriosam fuga repellat.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s9nuoBF2xX",
+          "_anchor": "ampContent5-12",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     }
