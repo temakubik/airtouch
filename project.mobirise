@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "index.html",
+    "currentPage": "kurs-private-page.html",
     "theme": {
       "name": "cosmetologyamp",
       "title": "CosmetologyAMP",
@@ -60,20 +60,22 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 34,
+    "uniqCompNum": 38,
     "versionPublish": "5.1.2",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false,
     "cssOptimize": true,
-    "robotsSwitcher": false,
-    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nDisallow: /kurs-private-page.html\n\n\n",
     "sitemapSwitcher": false,
     "siteUrl": false,
     "sitemapSwitcherAuto": "on",
     "favicon": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "pwa-switcher": false
+    "pwa-switcher": false,
+    "site_lang": "ru",
+    "canonical-url": false
   },
   "pages": {
     "index.html": {
@@ -681,11 +683,11 @@
           "_name": "video02",
           "_customHTML": "<section class=\"video2\" group=\"Video\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"mobirise-icons2, amp-main,amp-lightbox,amp-youtube\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"1\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" name=\"halfSize\" title=\"Half Size\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"https://www.youtube.com/watch?v=9AvJCTCDPpI\">.\n        <input type=\"image\" name=\"boxbg\" title=\"Video Image\" value=\"@PROJECT_PATH@/assets/images/img-8768-2000x2500.jpeg\">\n        <input type=\"color\" name=\"cardBg\" title=\"Hover Color\" value=\"#fef3f5\" selected>\n        <select title=\"Align\" name=\"alignHalf\" condition=\"halfSize\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <select title=\"Align\" name=\"alignTitle\" condition=\"showTitle || showSubtitle || showText || showButtons\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#5a3d30\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fef3f5\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\" mbr-class=\"{'align-left': alignTitle==1,\n                        'align-center': alignTitle==2,\n                        'align-right': alignTitle==3,\n                        'mbr-jc-c':alignHalf==2,\n                        'mbr-jc-e':alignHalf==3}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n            <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-6': halfSize,\n                             'mbr-col-lg-12': !halfSize}\">\n                <div class=\"bg\">\n                    <div class=\"text-wrap\">\n                        <div class=\"link-wrap\" mbr-if=\"showSubtitle\" on=\"tap:my-lightbox\" role=\"button\" tabindex=\"0\">\n                            <div class=\"link\">\n                                <div class=\"icon-wrap\">\n                                    <span mbr-icon class=\"amp-iconfont mobi-mbri-play mbr-flex mbr-jc-c mobi-mbri\"></span> </div>\n                            </div>\n                        </div>\n\n\n                        <h1 class=\"mbr-section-title mbr-pb-4 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">Смотреть ролик</h1>\n\n                        <p class=\"mbr-text mbr-regular mbr-gray mbr-pb-5 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".link-wrap, .mbr-text\">Lorem ipsum dolor sit amet,\n                            consectetur adipiscing elit. Donec dignissim nulla sit amet orci faucibus, eget consequat\n                            quam auctor. Proin varius, sapien at bibendum laoreet, leo elit tincidunt nisi.</p>\n\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <amp-lightbox id=\"my-lightbox\" layout=\"nodisplay\">\n        <div class=\"lightbox d-flex mbr-justify-content-center\" on=\"tap:my-lightbox.close\" role=\"button\" tabindex=\"0\">\n            <div class=\"container\">\n                <div class=\"video-block\">\n                    <amp-youtube width=\"4\" height=\"3\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n                        <div placeholder class=\"placeholder\"></div>\n                    </amp-youtube>\n                </div>\n            </div>\n        </div>\n    </amp-lightbox>\n\n\n</section>",
           "_cid": "s9mWv3ZNAM",
+          "_anchor": "video02-w",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "video02-w"
+          "_params": {}
         },
         {
           "alias": false,
@@ -1077,6 +1079,206 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        }
+      ]
+    },
+    "kurs-private-page.html": {
+      "settings": {
+        "title": "Курс Airtouch",
+        "order": 1,
+        "footer_custom": "",
+        "header_custom": "<meta name=\"robots\" content=\"noindex\">"
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#cccccc"
+            },
+            ".mbr-section-btn, .mbr-text": {
+              "color": "#66458e"
+            }
+          },
+          "_name": "content02",
+          "_customHTML": "<section class=\"content02\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" name=\"halfSize\" title=\"Half Size\">\n        <select title=\"Align\" name=\"alignHalf\" condition=\"halfSize\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <select title=\"Align\" name=\"alignTitle\" condition=\"showTitle || showSubtitle || showText || showButtons\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\" mbr-class=\"{'align-left': alignTitle==1,\n                        'align-center': alignTitle==2,\n                        'align-right': alignTitle==3,\n                        'mbr-jc-c':alignHalf==2,\n                        'mbr-jc-e':alignHalf==3}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n            <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-6': halfSize,\n                             'mbr-col-lg-12': !halfSize}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">Main Title</h1>\n                <h2 class=\"mbr-section-subtitle mbr-regualr mbr-fonts-style\" mbr-class=\"{'mbr-pt-3': showTitle}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">Home - About</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-class=\"{'mbr-pt-2': showTitle || showSubtitle}\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\">Блок 2</p>\n                <div mbr-buttons class=\"mbr-section-btn\" mbr-class=\"{'mbr-pt-4':showSubtitle||showTitle||showText}\" mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn-primary btn\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content02-y",
+          "_isUserblock": true,
+          "_sourceTheme": "cosmetologyamp",
+          "_cid": "s9nqyKKh4Y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".title": {
+              "h2": {
+                "letter-spacing": "2px"
+              }
+            },
+            ".wrapper-btn-play": {
+              "display": "inline-block"
+            },
+            ".btn-play": {
+              ".iconfont-wrapper": {
+                "display": "flex",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "width": "(@sizeBtnPlay * 1rem)",
+                "height": "(@sizeBtnPlay * 1rem)",
+                "span.amp-iconfont": {
+                  "font-size": "(@sizeBtnPlay * 1rem)",
+                  "color": "@colorIcon !important"
+                }
+              },
+              ".test-animation-2": {
+                "background-color": "@colorIconBg"
+              }
+            }
+          },
+          "_name": "ampVideo4",
+          "_customHTML": "<section class=\"ampVideo4 video-with-lightbox\" group=\"Images & Videos\" plugins=\"amp-main, amp-lightbox, amp-youtube\">\n    <!--  -->\n    <mbr-parameters>\n        <header>Size:</header>\n        <input type=\"range\" inline title=\"Top:\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom:\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <!--  -->\n        <header>Headers:</header>\n        <input type=\"checkbox\" title=\"Title:\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle:\" name=\"showSubtitle\" checked>\n        <select title=\"Align:\" name=\"alignTitle\" condition=\"showTitle || showSubtitle\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <!--  -->\n        <header>Button play:</header>\n        <input type=\"color\" title=\"Color icon:\" name=\"colorIcon\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Color BG icon:\" name=\"colorIconBg\" value=\"#f16d7e\">\n        <input type=\"range\" inline title=\"Size:\" name=\"sizeBtnPlay\" min=\"1\" max=\"2\" value=\"2\" step=\"0.1\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"https://youtu.be/okbBKxoQc1I\">\n        <!--  -->\n        <header>Background:</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image:\" value=\"@PROJECT_PATH@/assets/images/2-3024x4032.jpg\" selected>\n            <input type=\"color\" title=\"Background Color:\" value=\"#9096a4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay:\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Colorv:\" name=\"overlayColor\" value=\"#5a3d30\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity:\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--  -->\n    <!-- Overlay -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <!-- Container -->\n    <div class=\"container\">\n        <div class=\"title mbr-white\" mbr-class=\"{'align-left': alignTitle == 1,'align-center':alignTitle == 2, 'align-right':alignTitle == 3}\" mbr-if=\"showTitle || showSubtitle\">\n            <!-- Icon play -->\n            <div class=\"wrapper-btn-play\">\n                <div class=\"popup-btn btn-play\" on=\"tap:my-lightbox\" role=\"button\" tabindex=\"0\">\n                    <span class=\"iconfont-wrapper\">\n                        <span mbr-icon class=\"amp-iconfont fa-play fa\"></span>\n                    </span>\n                    <div class=\"test-animation-1\"></div>\n                    <div class=\"test-animation-2\"></div>\n                </div>\n            </div>\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold mbr-pt-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Смотреть урок</h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-3 mbr-light\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Обзор техники «airtouch». Методики выполнения. Разбор схем. Отработка схемы без стыков, с контурингом у лица.</h3>\n        </div>\n        <!-- Lightbox -->\n        <amp-lightbox id=\"my-lightbox\" layout=\"nodisplay\">\n            <div class=\"lightbox\" on=\"tap:my-lightbox.close\" role=\"button\" tabindex=\"0\">\n                <div class=\"container\">\n                    <div class=\"video-block\">\n                        <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n                    </amp-youtube>\n                </div>\n            </div>\n        </div>\n    </amp-lightbox>\n</div>\n</section>",
+          "_cid": "s9nqRyrDnp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "ampVideo4-10"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#cccccc"
+            },
+            ".mbr-section-btn, .mbr-text": {
+              "color": "#66458e"
+            }
+          },
+          "_name": "content02",
+          "_customHTML": "<section class=\"content02\" group=\"Content\" mbr-class=\"{'mbr-fullscreen': fullScreen}\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"2\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" name=\"halfSize\" title=\"Half Size\">\n        <select title=\"Align\" name=\"alignHalf\" condition=\"halfSize\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <select title=\"Align\" name=\"alignTitle\" condition=\"showTitle || showSubtitle || showText || showButtons\">\n            <option value=\"1\" selected>Left</option>\n            <option value=\"2\">Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1-1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\" mbr-class=\"{'align-left': alignTitle==1,\n                        'align-center': alignTitle==2,\n                        'align-right': alignTitle==3,\n                        'mbr-jc-c':alignHalf==2,\n                        'mbr-jc-e':alignHalf==3}\" mbr-if=\"showTitle || showSubtitle || showText || showButtons\">\n            <div class=\"title-block mbr-col-sm-12 mbr-col-md-12\" mbr-class=\"{'mbr-col-lg-6': halfSize,\n                             'mbr-col-lg-12': !halfSize}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .mbr-section-btn\">Main Title</h1>\n                <h2 class=\"mbr-section-subtitle mbr-regualr mbr-fonts-style\" mbr-class=\"{'mbr-pt-3': showTitle}\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">Home - About</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-class=\"{'mbr-pt-2': showTitle || showSubtitle}\" mbr-theme-style=\"display-1\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\">Блок 3</p>\n                <div mbr-buttons class=\"mbr-section-btn\" mbr-class=\"{'mbr-pt-4':showSubtitle||showTitle||showText}\" mbr-theme-style=\"display-7\" data-toolbar=\"-mbrBtnMove\" mbr-if=\"showButtons\"><a class=\"btn-primary btn\" data-app-placeholder=\"Type Text\">READ MORE</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content02-z",
+          "_isUserblock": true,
+          "_sourceTheme": "cosmetologyamp",
+          "_cid": "s9nqzr0K2A",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": "amp-blocks/components",
+          "_isSecondary": true,
+          "typeCompatible": "isAMP",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              ".mbr-overlay": {
+                "background-color": "@overlayColor",
+                "opacity": "@overlayOpacity"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".title-wrap": {
+                "padding-bottom": "2rem"
+              }
+            },
+            ".title": {
+              "h2": {
+                "letter-spacing": "2px"
+              }
+            },
+            ".wrapper-btn-play": {
+              "display": "inline-block"
+            },
+            ".btn-play": {
+              ".iconfont-wrapper": {
+                "display": "flex",
+                "-webkit-align-items": "center",
+                "align-items": "center",
+                "-webkit-justify-content": "center",
+                "justify-content": "center",
+                "width": "(@sizeBtnPlay * 1rem)",
+                "height": "(@sizeBtnPlay * 1rem)",
+                "span.amp-iconfont": {
+                  "font-size": "(@sizeBtnPlay * 1rem)",
+                  "color": "@colorIcon !important"
+                }
+              },
+              ".test-animation-2": {
+                "background-color": "@colorIconBg"
+              }
+            }
+          },
+          "_name": "ampVideo4",
+          "_customHTML": "<section class=\"ampVideo4 video-with-lightbox\" group=\"Images & Videos\" plugins=\"amp-main, amp-lightbox, amp-youtube\">\n    <!--  -->\n    <mbr-parameters>\n        <header>Size:</header>\n        <input type=\"range\" inline title=\"Top:\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom:\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <!--  -->\n        <header>Headers:</header>\n        <input type=\"checkbox\" title=\"Title:\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle:\" name=\"showSubtitle\" checked>\n        <select title=\"Align:\" name=\"alignTitle\" condition=\"showTitle || showSubtitle\">\n            <option value=\"1\">Left</option>\n            <option value=\"2\" selected>Center</option>\n            <option value=\"3\">Right</option>\n        </select>\n        <!--  -->\n        <header>Button play:</header>\n        <input type=\"color\" title=\"Color icon:\" name=\"colorIcon\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Color BG icon:\" name=\"colorIconBg\" value=\"#fac769\">\n        <input type=\"range\" inline title=\"Size:\" name=\"sizeBtnPlay\" min=\"1\" max=\"2\" value=\"2\" step=\"0.1\">\n        <input type=\"text\" title=\"Youtube Video URL\" name=\"videoUrl\" value=\"https://youtu.be/70kMdVe_Olw\">\n        <!--  -->\n        <header>Background:</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image:\" value=\"@PROJECT_PATH@/assets/images/1-3024x4032.jpeg\" selected>\n            <input type=\"color\" title=\"Background Color:\" value=\"#9096a4\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay:\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Colorv:\" name=\"overlayColor\" value=\"#5a3d30\" condition=\"overlay && bg.type == 'image'\">\n        <input type=\"range\" inline title=\"Opacity:\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type == 'image'\">\n    </mbr-parameters>\n    <!--  -->\n    <!-- Overlay -->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <!-- Container -->\n    <div class=\"container\">\n        <div class=\"title mbr-white\" mbr-class=\"{'align-left': alignTitle == 1,'align-center':alignTitle == 2, 'align-right':alignTitle == 3}\" mbr-if=\"showTitle || showSubtitle\">\n            <!-- Icon play -->\n            <div class=\"wrapper-btn-play\">\n                <div class=\"popup-btn btn-play\" on=\"tap:my-lightbox\" role=\"button\" tabindex=\"0\">\n                    <span class=\"iconfont-wrapper\">\n                        <span mbr-icon class=\"amp-iconfont fa-play fa\"></span>\n                    </span>\n                    <div class=\"test-animation-1\"></div>\n                    <div class=\"test-animation-2\"></div>\n                </div>\n            </div>\n            <h2 class=\"mbr-section-title mbr-fonts-style mbr-bold mbr-pt-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">Смотреть урок</h2>\n            <h3 class=\"mbr-section-subtitle mbr-fonts-style mbr-pt-3 mbr-light\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">Работа с фоном осветления. Цветокоррекция. Чистка базы. Чистое тонирование. Авторская технология.</h3>\n        </div>\n        <!-- Lightbox -->\n        <amp-lightbox id=\"my-lightbox\" layout=\"nodisplay\">\n            <div class=\"lightbox\" on=\"tap:my-lightbox.close\" role=\"button\" tabindex=\"0\">\n                <div class=\"container\">\n                    <div class=\"video-block\">\n                        <amp-youtube width=\"16\" height=\"9\" layout=\"responsive\" data-videoid=\"lBTCB7yLs8Y\">\n                    </amp-youtube>\n                </div>\n            </div>\n        </div>\n    </amp-lightbox>\n</div>\n</section>",
+          "_cid": "s9nqSEI36J",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "ampVideo4-11"
         }
       ]
     }
